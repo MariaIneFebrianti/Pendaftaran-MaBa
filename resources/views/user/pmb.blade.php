@@ -69,15 +69,15 @@
                                         </td>
                                         <td class="px-6 py-4">
                                             @if ($item->status == 'menunggu')
-                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+                                                <span class="px-2 inline-flex leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
                                                     Menunggu
                                                 </span>
                                             @elseif ($item->status == 'diterima')
-                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                                <span class="px-2 inline-flex leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                                                     Diterima
                                                 </span>
                                             @elseif ($item->status == 'ditolak')
-                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
+                                                <span class="px-2 inline-flex leading-5 font-semibold rounded-full bg-red-100 text-green-800">
                                                     Ditolak
                                                 </span>
                                             @endif

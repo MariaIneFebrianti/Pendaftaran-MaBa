@@ -53,10 +53,13 @@ class AdminController extends Controller
     // }
     public function updateStatus(Request $request)
     {
+        // Mencari entitas Mahasiswa berdasarkan ID yang diterima dari request
         $mahasiswa = MahasiswaModel::where('id', $request->id)->first();
+        // Jika entitas Mahasiswa ditemukan, perbarui statusnya dengan nilai yang diterima dari request
         $mahasiswa->update([
             'status' => $request->status
         ]);
+        // Mengarahkan kembali ke halaman sebelumnya setelah status diperbarui
         return redirect()->back();
     }
 }
